@@ -80,11 +80,12 @@ rm -f $HOME/Library/Application\ Support/Code/User/settings.json
 rm -f $HOME/Library/Application\ Support/Code/User/keybindings.json
 rm -rf $HOME/Library/Application\ Support/Code/User/snippets
 
-ln -snf $script_dir/vscode $HOME/Library/Application\ Support/Code/User/
+ln -snf $script_dir/vscode/* $HOME/Library/Application\ Support/Code/User/
 
 
 # zsh
 rm -f $HOME/.zshrc
 rm -f $HOME/.zshenv
 
-ln -snf $script_dir/zsh/* $HOME/
+ln -snf $script_dir/zsh/.zshrc $HOME/.zshrc
+ln -snf $script_dir/zsh/.zshenv $HOME/.zshenv

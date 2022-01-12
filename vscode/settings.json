@@ -7,7 +7,14 @@
   "editor.formatOnPaste": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.snippetSuggestions": "top",
-  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh",
+      "icon": "star",
+      "env": {}
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontSize": 16,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
