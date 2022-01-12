@@ -89,3 +89,7 @@ rm -f $HOME/.zshenv
 
 ln -snf $script_dir/zsh/.zshrc $HOME/.zshrc
 ln -snf $script_dir/zsh/.zshenv $HOME/.zshenv
+
+# git
+rm -f $HOME/.gitconfig
+ln -snf $script_dir/git/.gitconfig $HOME/.gitconfig
