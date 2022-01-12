@@ -86,9 +86,11 @@ ln -snf $script_dir/vscode/* $HOME/Library/Application\ Support/Code/User/
 # zsh
 rm -f $HOME/.zshrc
 rm -f $HOME/.zshenv
+rm -f $HOME/.p10k.zsh
 
 ln -snf $script_dir/zsh/.zshrc $HOME/.zshrc
 ln -snf $script_dir/zsh/.zshenv $HOME/.zshenv
+ln -snf $script_dir/zsh/.p10k.zsh $HOME/.p10k.zsh
 
 # git
 rm -f $HOME/.gitconfig
