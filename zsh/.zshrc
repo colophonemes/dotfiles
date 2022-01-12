@@ -80,7 +80,7 @@ export NVM_AUTO_USE=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm vscode zsh-nvm yarn-autocompletions)
+plugins=(git nvm vscode zsh-nvm zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,14 +96,22 @@ setopt appendhistory
 # Source version managers
 
 ## rbenv / Ruby
-eval "$(rbenv init - zsh)"
+if command -v rbenv &> /dev/null
+then
+  eval "$(rbenv init - zsh)"
+fi
 ## pyenv / Python
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+if command -v pyenv &> /dev/null
+then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
 
+# Path
+export PATH=/opt/homebrew/bin:$PATH
 
 ## Other completions - comes after rbenv so that tmuxinator completions get picked up
-fpath=(~/.zsh $fpath)
+fpath=(~/.zsh ~/.tmuxinator.zsh $fpath)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -136,8 +144,6 @@ prompt_context(){}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #alias tmuxinator to mux
 alias mux=tmuxinator

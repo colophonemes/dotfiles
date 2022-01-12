@@ -73,7 +73,11 @@ setup_colors
 ln -snf $script_dir/keyboard/* $HOME/.keyboard/hammerspoon/
 
 # tmux
-ln -snf $script_dir/tmux $HOME/
+rm -f $HOME/.tmux.conf
+rm -f $HOME/.tmuxinator.zsh
+
+ln -snf $script_dir/tmux/.tmux.conf $HOME/.tmux.conf
+ln -snf $script_dir/tmux/.tmuxinator.zsh $HOME/.tmuxinator.zsh
 
 # vscode
 rm -f $HOME/Library/Application\ Support/Code/User/settings.json
