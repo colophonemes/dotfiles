@@ -5,6 +5,7 @@
   "files.trimTrailingWhitespace": true,
   "editor.formatOnPaste": true,
   "editor.multiCursorModifier": "ctrlCmd",
+  "terminal.integrated.fontFamily": "Inconsolata-g for Powerline",
   "editor.snippetSuggestions": "top",
   "terminal.integrated.profiles.osx": {
     "zsh": {
