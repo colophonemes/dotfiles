@@ -1,0 +1,70 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+a k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+a j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+a h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+a l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+a h",
+    "command": "workbench.action.previousPanelView",
+    "when": "panelFocus"
+  },
+  {
+    "key": "ctrl+a l",
+    "command": "workbench.action.nextPanelView",
+    "when": "panelFocus"
+  },
+  {
+    "key": "ctrl+a k",
+    "command": "workbench.files.action.focusOpenEditorsView",
+    "when": "sideBarFocus && explorerViewletVisible"
+  },
+  {
+    "key": "ctrl+a j",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "sideBarFocus && explorerViewletVisible && !filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+a shift+\\",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+a -",
+    "command": "workbench.action.splitEditorOrthogonal"
+  },
+  {
+    "key": "ctrl+a shift+\\",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a h",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a l",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a o",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+a i",
+    "command": "workbench.action.terminal.focusPrevious"
+  }
+]
